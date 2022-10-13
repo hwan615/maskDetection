@@ -38,8 +38,8 @@ while webcam.isOpened():
         if sample_num % 8  == 0:
             captured_num = captured_num + 1
             face_in_img = frame[startY:endY, startX:endX, :]
-            cv2.imwrite('./mask/face'+str(captured_num)+'.jpg', face_in_img) # 마스크 미착용 데이터 수집시 주석처리
-            # cv2.imwrite('./nomask/face'+str(captured_num)+'.jpg', face_in_img) # 마스크 미착용 데이터 수집시 주석해제
+            # cv2.imwrite('./mask/face'+str(captured_num)+'.jpg', face_in_img) # 마스크 미착용 데이터 수집시 주석처리
+            cv2.imwrite('./nomask/face'+str(captured_num)+'.jpg', face_in_img) # 마스크 미착용 데이터 수집시 주석해제
  
  
     # display output
